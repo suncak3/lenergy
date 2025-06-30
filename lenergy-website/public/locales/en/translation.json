@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "catalog": "Catalog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "products": {
+    "hoses": "Industrial Hoses",
+    "fittings": "Hydraulic Fittings", 
+    "valves": "Control Valves",
+    "assemblies": "Custom Assemblies"
+  },
+  "search": {
+    "placeholder": "Search products..."
+  },
+  "header": {
+    "tagline": "Industrial Solutions",
+    "quote": "Get Quote",
+    "call": "Call Now"
+  },
+  "home": {
+    "hero": {
+      "badge": "Industry Leader",
+      "slide1": {
+        "title": "Industrial Excellence",
+        "subtitle": "Premium hydraulic solutions for modern industry"
+      },
+      "slide2": {
+        "title": "Quality Guaranteed", 
+        "subtitle": "ISO certified products with 2-year warranty"
+      },
+      "slide3": {
+        "title": "Global Reach",
+        "subtitle": "Serving 25+ countries worldwide"
+      },
+      "years": "Years",
+      "clients": "Clients", 
+      "countries": "Countries",
+      "explore": "Explore Products",
+      "video": "Watch Video",
+      "certified": "ISO Certified",
+      "quality": "Premium Quality",
+      "global": "Global Delivery"
+    },
+    "features": {
+      "title": "Why Choose Lenergy",
+      "subtitle": "Industry-leading solutions backed by expertise and innovation",
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "ISO certified products with rigorous quality control and 2-year warranty coverage.",
+        "reliability": "Reliability"
+      },
+      "expertise": {
+        "title": "Technical Expertise", 
+        "desc": "Professional engineering team providing custom solutions and technical support.",
+        "support": "Support"
+      },
+      "innovation": {
+        "title": "Innovation Focus",
+        "desc": "Cutting-edge technology integration and continuous product development.",
+        "patents": "Patents"
+      }
+    },
+    "products": {
+      "title": "Our Product Range",
+      "subtitle": "Comprehensive industrial solutions for every need",
+      "explore": "Explore",
+      "hoses": {
+        "desc": "High-pressure hydraulic hoses for demanding applications"
+      },
+      "fittings": {
+        "desc": "Precision-engineered fittings for secure connections"
+      },
+      "valves": {
+        "desc": "Advanced flow control and regulation systems"
+      }
+    },
+    "trust": {
+      "title": "Trusted by Industry Leaders",
+      "subtitle": "Join 500+ companies who rely on our expertise",
+      "clients": "Active Clients",
+      "rating": "Client Rating", 
+      "countries": "Countries Served",
+      "cta": "Start Your Project"
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Get a free consultation and quote for your project",
+      "quote": "Get Free Quote",
+      "call": "Call Now: +7 (777) 123-45-67"
+    }
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Stay Updated",
+      "subtitle": "Get the latest product updates and industry news.",
+      "placeholder": "Your email",
+      "subscribe": "Subscribe"
+    },
+    "experience": "15+ Years Experience",
+    "certified": "ISO Certified",
+    "clients": "500+ Clients",
+    "description": "Leading supplier of industrial hoses and fittings in Kazakhstan.",
+    "links": "Quick Links",
+    "products": "Products", 
+    "contact": "Contact",
+    "address": "Almaty, Kazakhstan",
+    "addressLabel": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Business Hours",
+    "workingHours": "Mon-Fri 9:00-18:00",
+    "cta": "Get Quote",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}
