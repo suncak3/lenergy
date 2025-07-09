@@ -3,9 +3,8 @@ import { Search, ShoppingCart, User, Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import '../styles/Header.css';
 
-const Header = () => {
+const Header = ({ currentPage = 'home', onPageChange }) => {
   const { t, i18n } = useTranslation();
-  const [currentPage, setCurrentPage] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
@@ -23,25 +22,29 @@ const Header = () => {
     i18n.changeLanguage(newLang);
   };
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
+  const handlePageChange = (page, category = null) => {
+    if (onPageChange) {
+      onPageChange(page, category);
+    }
     setIsMenuOpen(false);
+    
+    // Scroll to top when changing pages
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const navItems = [
     { id: 'home', label: t('nav.home', 'Home') },
     { 
-      id: 'products', 
+      id: 'products',
       label: t('nav.products', 'Products'),
       hasDropdown: true,
       dropdownItems: [
-        { label: t('products.hoses', 'Industrial Hoses'), href: '#hoses' },
-        { label: t('products.fittings', 'Hydraulic Fittings'), href: '#fittings' },
-        { label: t('products.valves', 'Control Valves'), href: '#valves' },
-        { label: t('products.assemblies', 'Custom Assemblies'), href: '#assemblies' }
+        { label: t('products.hoses', 'Industrial Hoses'), category: 'hoses' },
+        { label: t('products.fittings', 'Hydraulic Fittings'), category: 'fittings' },
+        { label: t('products.valves', 'Control Valves'), category: 'valves' },
+        { label: t('products.assemblies', 'Custom Assemblies'), category: 'assemblies' }
       ]
     },
-    { id: 'catalog', label: t('nav.catalog', 'Catalog') },
     { id: 'about', label: t('nav.about', 'About') },
     { id: 'contact', label: t('nav.contact', 'Contact') }
   ];
@@ -84,13 +87,16 @@ const Header = () => {
                   <div className="dropdown-menu">
                     <div className="dropdown-content">
                       {item.dropdownItems.map((dropdownItem, index) => (
-                        <a
+                        <button
                           key={index}
-                          href={dropdownItem.href}
                           className="dropdown-link"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handlePageChange('products', dropdownItem.category);
+                          }}
                         >
                           {dropdownItem.label}
-                        </a>
+                        </button>
                       ))}
                     </div>
                   </div>
@@ -162,13 +168,16 @@ const Header = () => {
                   {item.hasDropdown && currentPage === item.id && (
                     <div className="mobile-dropdown">
                       {item.dropdownItems.map((dropdownItem, index) => (
-                        <a
+                        <button
                           key={index}
-                          href={dropdownItem.href}
                           className="mobile-dropdown-link"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            handlePageChange('products', dropdownItem.category);
+                          }}
                         >
                           {dropdownItem.label}
-                        </a>
+                        </button>
                       ))}
                     </div>
                   )}
@@ -176,10 +185,13 @@ const Header = () => {
               ))}
             </nav>
 
-            {/* Mobile Actions - Simplified */}
+            {/* Mobile Actions */}
             <div className="mobile-actions">
-              <button className="mobile-action-btn">
-                <span>Contact Us</span>
+              <button 
+                className="mobile-action-btn"
+                onClick={() => handlePageChange('contact')}
+              >
+                <span>{t('nav.contact', 'Contact Us')}</span>
               </button>
             </div>
           </div>

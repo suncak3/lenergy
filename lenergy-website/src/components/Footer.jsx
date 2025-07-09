@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, ArrowRight, Send, Clock, Award, Truck, Shield } fr
 import { useTranslation } from 'react-i18next';
 import '../styles/Footer.css';
 
-const Footer = () => {
+const Footer = ({ currentPage, onPageChange }) => {
   const { t } = useTranslation();
   const [email, setEmail] = React.useState('');
 
@@ -12,6 +12,13 @@ const Footer = () => {
     // Handle newsletter signup
     console.log('Newsletter signup:', email);
     setEmail('');
+  };
+
+  const handleNavigation = (page, category = null) => {
+    if (onPageChange) {
+      onPageChange(page, category);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -86,35 +93,129 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* CTA Button - Moved here for better positioning */}
+              {/* CTA Button - Fixed Navigation */}
               <div className="footer-cta">
-                <a href="#contact" className="cta-button">
+                <a 
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation('contact');
+                  }}
+                  className="cta-button"
+                >
                   <span>{t('footer.cta', 'Get Quote')}</span>
                   <ArrowRight className="cta-icon" />
                 </a>
               </div>
             </div>
 
-            {/* Quick Links */}
+            {/* Quick Links - Fixed Navigation */}
             <div className="footer-column">
               <h4 className="footer-heading">{t('footer.links', 'Quick Links')}</h4>
               <ul className="footer-links">
-                <li><a href="#home" className="footer-link">{t('nav.home', 'Home')}</a></li>
-                <li><a href="#products" className="footer-link">{t('nav.products', 'Products')}</a></li>
-                <li><a href="#catalog" className="footer-link">{t('nav.catalog', 'Catalog')}</a></li>
-                <li><a href="#about" className="footer-link">{t('nav.about', 'About')}</a></li>
-                <li><a href="#contact" className="footer-link">{t('nav.contact', 'Contact')}</a></li>
+                <li>
+                  <a 
+                    href="#home"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('home');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('nav.home', 'Home')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#products"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('products');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('nav.products', 'Products')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#about"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('about');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('nav.about', 'About')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('contact');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('nav.contact', 'Contact')}
+                  </a>
+                </li>
               </ul>
             </div>
 
-            {/* Products */}
+            {/* Products - Fixed Navigation with Category */}
             <div className="footer-column">
               <h4 className="footer-heading">{t('footer.products', 'Products')}</h4>
               <ul className="footer-links">
-                <li><a href="#hoses" className="footer-link">{t('products.hoses', 'Industrial Hoses')}</a></li>
-                <li><a href="#fittings" className="footer-link">{t('products.fittings', 'Hydraulic Fittings')}</a></li>
-                <li><a href="#valves" className="footer-link">{t('products.valves', 'Control Valves')}</a></li>
-                <li><a href="#assemblies" className="footer-link">{t('products.assemblies', 'Custom Assemblies')}</a></li>
+                <li>
+                  <a 
+                    href="#hoses"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('products', 'hoses');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('products.hoses', 'Industrial Hoses')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#fittings"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('products', 'fittings');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('products.fittings', 'Hydraulic Fittings')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#valves"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('products', 'valves');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('products.valves', 'Control Valves')}
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#assemblies"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation('products', 'assemblies');
+                    }}
+                    className="footer-link"
+                  >
+                    {t('products.assemblies', 'Custom Assemblies')}
+                  </a>
+                </li>
               </ul>
             </div>
 

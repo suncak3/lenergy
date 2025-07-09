@@ -6,7 +6,7 @@
     "about": "About",
     "contact": "Contact"
   },
-  "products": {
+  "productsNav": {
     "hoses": "Industrial Hoses",
     "fittings": "Hydraulic Fittings", 
     "valves": "Control Valves",
@@ -116,5 +116,286 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy",
     "terms": "Terms"
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Ready to discuss your project? Our team of experts is here to help you find the perfect industrial solutions.",
+      "support": "Support",
+      "response": "Response",
+      "years": "Years"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "company": "Company",
+      "companyPlaceholder": "Your company name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+7 (777) 123-45-67",
+      "subject": "Subject",
+      "selectSubject": "Select a subject",
+      "general": "General Inquiry",
+      "quote": "Request Quote",
+      "support": "Technical Support",
+      "partnership": "Partnership",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project requirements...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "sent": "Message Sent!",
+      "error": "Try Again"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Reach out to us through any of these channels"
+    },
+    "phone": "Phone",
+    "phoneDesc": "Call us during business hours",
+    "email": "Email",
+    "emailDesc": "Send us your inquiry anytime",
+    "address": "Address",
+    "addressValue": "Almaty, Kazakhstan",
+    "addressDesc": "Visit our main office",
+    "hours": "Business Hours",
+    "hoursValue": "Mon-Fri 9:00-18:00",
+    "hoursDesc": "We are here to help you",
+    "map": {
+      "title": "Find Us",
+      "placeholder": "Interactive map will be here"
+    },
+    "cta": {
+      "title": "Need Immediate Assistance?",
+      "description": "Call us directly for urgent inquiries",
+      "call": "Call Now"
+    }
+  },
+  "about": {
+    "hero": {
+      "badge": "Since 2008",
+      "title": "About Lenergy",
+      "subtitle": "Leading the industrial revolution with innovative hydraulic solutions and uncompromising quality standards that power industries across the globe.",
+      "story": "Our Story",
+      "video": "Company Video"
+    },
+    "stats": {
+      "experience": "Years Experience",
+      "clients": "Happy Clients",
+      "countries": "Countries Served",
+      "projects": "Projects Completed"
+    },
+    "mvv": {
+      "title": "What Drives Us",
+      "subtitle": "Our core principles that guide every decision and innovation"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide world-class industrial solutions that empower businesses to achieve operational excellence while maintaining the highest standards of safety and reliability."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "To be the leading global provider of innovative industrial solutions, setting new standards for quality, sustainability, and customer satisfaction across all markets we serve."
+    },
+    "values": {
+      "title": "Our Values",
+      "content": "Quality, Innovation, Integrity, and Customer Success drive everything we do. We believe in building lasting partnerships through trust, transparency, and exceptional service."
+    },
+    "features": {
+      "commitment": "Unwavering Commitment",
+      "innovation": "Continuous Innovation",
+      "excellence": "Operational Excellence"
+    },
+    "whyChoose": {
+      "title": "Why Choose Lenergy",
+      "subtitle": "What sets us apart in the industrial solutions market",
+      "quality": {
+        "title": "Uncompromising Quality",
+        "desc": "Every product undergoes rigorous testing and quality control to ensure maximum reliability and performance.",
+        "feature": "ISO 9001:2015 Certified"
+      },
+      "expertise": {
+        "title": "Technical Expertise",
+        "desc": "Our engineering team provides comprehensive technical support and custom solutions for complex applications.",
+        "feature": "24/7 Technical Support"
+      },
+      "delivery": {
+        "title": "Global Reach",
+        "desc": "Fast and reliable delivery network covering 25+ countries with local support and service.",
+        "feature": "Express Delivery Available"
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "desc": "Investment in R&D ensures we stay ahead of industry trends and technological advancements.",
+        "feature": "Latest Technology"
+      }
+    },
+    "industries": {
+      "title": "Industries We Serve",
+      "subtitle": "Trusted solutions across diverse industrial sectors",
+      "manufacturing": {
+        "title": "Manufacturing",
+        "desc": "Production line automation and hydraulic systems",
+        "projects": "Projects"
+      },
+      "construction": {
+        "title": "Construction",
+        "desc": "Heavy machinery and equipment hydraulics",
+        "projects": "Projects"
+      },
+      "mining": {
+        "title": "Mining",
+        "desc": "Heavy-duty solutions for extreme conditions",
+        "projects": "Projects"
+      },
+      "agriculture": {
+        "title": "Agriculture",
+        "desc": "Farm equipment and irrigation systems",
+        "projects": "Projects"
+      },
+      "energy": {
+        "title": "Energy",
+        "desc": "Power generation and distribution systems",
+        "projects": "Projects"
+      },
+      "marine": {
+        "title": "Marine",
+        "desc": "Marine vessels and offshore platforms",
+        "projects": "Projects"
+      }
+    },
+    "achievements": {
+      "title": "Our Achievements",
+      "subtitle": "Recognition and certifications that validate our commitment to excellence",
+      "iso": {
+        "title": "ISO 9001:2015 Certified",
+        "desc": "International quality management standards"
+      },
+      "team": {
+        "title": "50+ Expert Team",
+        "desc": "Highly skilled engineers and specialists"
+      },
+      "warranty": {
+        "title": "2-Year Warranty",
+        "desc": "Comprehensive coverage on all products"
+      },
+      "delivery": {
+        "title": "Global Delivery",
+        "desc": "Fast and reliable worldwide shipping"
+      }
+    },
+    "cta": {
+      "title": "Ready to Partner with Us?",
+      "subtitle": "Join hundreds of companies who trust Lenergy for their industrial needs",
+      "contact": "Contact Our Team",
+      "catalog": "Download Catalog"
+    }
+  },
+  "products": {
+    "hero": {
+      "title": "Our Products",
+      "subtitle": "Discover our comprehensive range of premium industrial hydraulic solutions designed to power your operations with reliability and efficiency.",
+      "searchPlaceholder": "Search products, categories, specifications...",
+      "search": "Search",
+      "stats": {
+        "products": "Products",
+        "certified": "Certified", 
+        "warranty": "Warranty"
+      }
+    },
+    "categories": {
+      "all": "All Products",
+      "hoses": "Industrial Hoses",
+      "fittings": "Hydraulic Fittings",
+      "valves": "Control Valves",
+      "assemblies": "Custom Assemblies"
+    },
+    "controls": {
+      "filters": "Filters",
+      "results": "results"
+    },
+    "badges": {
+      "bestseller": "Bestseller",
+      "iso": "ISO Certified",
+      "premium": "Premium",
+      "warranty": "2Y Warranty",
+      "smart": "Smart",
+      "energy": "Energy+",
+      "custom": "Custom",
+      "engineering": "Engineered",
+      "heavyDuty": "Heavy Duty",
+      "weather": "Weather+",
+      "quick": "Quick",
+      "safety": "Safety+"
+    },
+    "actions": {
+      "view": "Quick View",
+      "datasheet": "Datasheet",
+      "inquiry": "Get Quote"
+    },
+    "featured": {
+      "highPressureHose": {
+        "name": "High-Pressure Hydraulic Hose",
+        "desc": "Premium hydraulic hose designed for extreme pressure applications with superior flexibility and durability."
+      },
+      "hydraulicFitting": {
+        "name": "Precision Hydraulic Fitting", 
+        "desc": "Precision-engineered fittings ensuring leak-proof connections in demanding industrial environments."
+      },
+      "controlValve": {
+        "name": "Smart Control Valve",
+        "desc": "Advanced control valve with smart monitoring capabilities for precise flow regulation and energy efficiency."
+      },
+      "customAssembly": {
+        "name": "Custom Hydraulic Assembly",
+        "desc": "Fully customized hydraulic assemblies designed and manufactured to meet your specific application requirements."
+      },
+      "industrialHose": {
+        "name": "Heavy-Duty Industrial Hose",
+        "desc": "Robust industrial hose perfect for construction and mining applications with excellent weather resistance."
+      },
+      "quickConnect": {
+        "name": "Quick-Connect Coupling",
+        "desc": "Fast and secure quick-connect couplings designed for rapid equipment changes and maintenance operations."
+      }
+    },
+    "features": {
+      "pressure": "High pressure resistance",
+      "flexibility": "Superior flexibility", 
+      "durability": "Long-lasting construction",
+      "leakproof": "Leak-proof design",
+      "corrosion": "Corrosion resistant",
+      "precision": "Precision threading",
+      "smart": "Smart monitoring",
+      "efficiency": "Energy efficient",
+      "custom": "Custom design",
+      "testing": "Factory tested",
+      "support": "Technical support",
+      "robust": "Heavy-duty construction",
+      "weather": "Weather resistant",
+      "versatile": "Versatile applications",
+      "quick": "Fast connection",
+      "secure": "Secure locking",
+      "maintenance": "Easy maintenance"
+    },
+    "price": {
+      "quote": "Quote Required"
+    },
+    "modal": {
+      "features": "Key Features",
+      "specifications": "Specifications",
+      "getQuote": "Get Quote", 
+      "download": "Download Specs"
+    },
+    "loadMore": "Load More Products",
+    "loadMoreText": "Showing 6 of 48 products",
+    "cta": {
+      "title": "Need a Custom Solution?",
+      "subtitle": "Our engineering team can design and manufacture custom hydraulic solutions tailored to your specific requirements.",
+      "discuss": "Discuss Your Project",
+      "catalog": "Download Full Catalog"
+    }
   }
 }

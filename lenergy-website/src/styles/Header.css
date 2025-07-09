@@ -1,24 +1,24 @@
-/* Header.css - Modern header matching Figma template */
+/* Header.css - Modern header matching footer styles */
 
-/* Colors from Figma template */
+/* Colors matching footer theme */
 :root {
-  /* Backgrounds - lighter than pure black */
+  /* Backgrounds - matching footer */
   --header-bg: #1a1a1a;              /* Main header background */
   --header-bg-scroll: #141414;        /* Scrolled header background */
   --card-bg: #2a2a2a;                /* Card/dropdown backgrounds */
   
-  /* Orange accent from template */
+  /* Orange accent matching footer */
   --orange-primary: #FF5722;          /* Primary orange */
   --orange-hover: #E64A19;            /* Orange hover */
   --orange-light: rgba(255, 87, 34, 0.1); /* Orange background */
   
-  /* Text colors */
+  /* Text colors matching footer */
   --text-primary: #FFFFFF;            /* Primary white text */
   --text-secondary: #E0E0E0;          /* Secondary light text */
   --text-muted: #A0A0A0;              /* Muted gray text */
   --text-disabled: #666666;           /* Disabled text */
   
-  /* Borders and dividers */
+  /* Borders and dividers matching footer */
   --border-color: #333333;            /* Border color */
   --border-light: #404040;            /* Light border */
   
@@ -26,12 +26,12 @@
   --header-height: 70px;
   --container-padding: 24px;
   
-  /* Shadows */
+  /* Shadows matching footer */
   --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.15);
   --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.2);
   --shadow-heavy: 0 8px 32px rgba(0, 0, 0, 0.3);
   
-  /* Transitions */
+  /* Transitions matching footer */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   
@@ -168,7 +168,7 @@
   transform: rotate(180deg);
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu - Enhanced to match footer style */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -198,18 +198,42 @@
 
 .dropdown-link {
   display: block;
+  width: 100%;
   padding: 12px 16px;
   color: var(--text-secondary);
-  text-decoration: none;
+  background: none;
+  border: none;
   border-radius: var(--radius-md);
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
   transition: all var(--transition-fast);
+  text-align: left;
+  position: relative;
 }
 
 .dropdown-link:hover {
-  color: var(--text-primary);
+  color: var(--orange-primary);
   background-color: rgba(255, 255, 255, 0.05);
+  transform: translateX(4px);
+}
+
+.dropdown-link::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--orange-primary);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.dropdown-link:hover::before {
+  opacity: 1;
 }
 
 /* Search Bar - Enhanced */
@@ -314,7 +338,7 @@
   line-height: 1;
 }
 
-/* Language Toggle */
+/* Language Toggle - Enhanced to match footer style */
 .language-toggle {
   padding: 8px 16px;
   background-color: var(--card-bg);
@@ -331,6 +355,7 @@
   color: var(--text-primary);
   border-color: var(--orange-primary);
   background-color: var(--orange-light);
+  transform: translateY(-2px);
 }
 
 /* Mobile Menu Toggle */
@@ -436,7 +461,7 @@
   border-bottom: none;
 }
 
-/* Mobile Dropdown */
+/* Mobile Dropdown - Enhanced to match footer style */
 .mobile-dropdown {
   margin-top: 12px;
   margin-left: 20px;
@@ -446,15 +471,39 @@
 
 .mobile-dropdown-link {
   display: block;
+  width: 100%;
   padding: 8px 0;
   color: var(--text-muted);
-  text-decoration: none;
+  background: none;
+  border: none;
   font-size: 14px;
-  transition: color var(--transition-fast);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  position: relative;
 }
 
 .mobile-dropdown-link:hover {
   color: var(--orange-primary);
+  transform: translateX(4px);
+}
+
+.mobile-dropdown-link::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--orange-primary);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.mobile-dropdown-link:hover::before {
+  opacity: 1;
 }
 
 /* Mobile Actions */
@@ -483,6 +532,7 @@
   color: var(--text-primary);
   border-color: var(--orange-primary);
   background-color: var(--orange-light);
+  transform: translateY(-2px);
 }
 
 .mobile-action-icon {
